@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0">
+			<channel xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+				<title>jobs in bridgewater - Stack Overflow</title>
+
+				<link>https://stackoverflow.com/jobs</link>
+
+				<description>jobs in bridgewater - Stack Overflow</description>
+					<image>
+						<url>http://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d</url>
+							<title>jobs in bridgewater - Stack Overflow</title>
+								<link>https://stackoverflow.com/jobs</link>
+					</image>
+
+				<os:totalResults>105</os:totalResults>
+
+
+				<item>
+					
+					<guid isPermaLink="false">141109</guid>
+						
+						<link>https://stackoverflow.com/jobs/141109/quality-assurance-engineer-veson-nautical?a=Lk3QGyZZXVu
+						</link>
+						
+						<a10:author>
+							
+							<a10:name>Veson Nautical</a10:name>
+						
+						</a10:author>
+							
+							<category>c#</category><category>python</category><category>sql</category>
+								
+								<title>Quality Assurance Engineer at Veson Nautical (Boston, MA)</title>
+								
+									<description>
+										&lt;p&gt;How would you like to play a key role on a small team of dedicated software testers? As a Veson Nautical Quality Assurance Engineer you will help ensure product quality and customer satisfaction for the world&amp;rsquo;s leading developer of commercial maritime shipping software.&lt;/p&gt;&lt;br /&gt;&lt;p&gt;You&amp;rsquo;ll work as an equal partner with developers and product managers, focusing on Veson Nautical's traditional client/server Windows application, IMOS, and growing SaaS product, Veslink. As part of the team, you'll be empowered to use a variety of techniques to create and execute powerful tests that solve a broad spectrum of issues. Veson Nautical currently uses Python or C# to write tools and tests, but QA team members are also encouraged to explore and implement the best tools for the job.&lt;/p&gt;&lt;br /&gt;&lt;p&gt;&lt;strong&gt;Skills &amp;amp; Requirements&lt;/strong&gt;&lt;/p&gt;&lt;br /&gt;&lt;p&gt;We are currently seeking candidates at all levels of experience, who:&lt;/p&gt;&lt;br /&gt;&lt;ul&gt;&lt;br /&gt;&lt;li&gt;Have a passion for quality&lt;/li&gt;&lt;br /&gt;&lt;li&gt;Love a good puzzle and enjoy troubleshooting complex problems&lt;/li&gt;&lt;br /&gt;&lt;li&gt;Can advocate for software change&lt;/li&gt;&lt;br /&gt;&lt;li&gt;Have strong written and oral communication skills&lt;/li&gt;&lt;br /&gt;&lt;li&gt;Are able to conduct ad-hoc or exploratory testing with thin documentation&lt;/li&gt;&lt;br /&gt;&lt;li&gt;Want to work in a fast-paced, entrepreneurial setting&lt;/li&gt;&lt;br /&gt;&lt;li&gt;Have a proactive and positive approach to work&lt;/li&gt;&lt;br /&gt;&lt;/ul&gt;&lt;br /&gt;&lt;p&gt;Ideally you'll also have:&lt;/p&gt;&lt;br /&gt;&lt;ul&gt;&lt;br /&gt;&lt;li&gt;Familiarity with programming, especially practical experience in Python or C#&lt;/li&gt;&lt;br /&gt;&lt;li&gt;Relational database knowledge, especially Microsoft SQL Server&lt;/li&gt;&lt;br /&gt;&lt;li&gt;Bachelor's degree in Computer Science, another technical field, or equivalent experience&lt;/li&gt;&lt;br /&gt;&lt;/ul&gt;
+									</description>
+
+							<pubDate>Fri, 02 Feb 2018 20:18:44 Z</pubDate>
+						<a10:updated>2018-02-02T20:18:44Z</a10:updated>
+						<location xmlns="http://stackoverflow.com/jobs/">Boston, MA</location>
+
+				</item>
