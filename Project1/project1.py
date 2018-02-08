@@ -12,4 +12,11 @@ titles = tree.xpath('//title/text()')
 
 descriptions = tree.xpath('//description/text()')
 
-print ('Titles: '), titles
+for x in titles:
+	print ('Title: ', x)
+	print ('\n')
+
+#for y in descriptions:
+#	print ('Description: ', y)
+#	print ('\n')
+
