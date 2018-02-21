@@ -3,20 +3,14 @@
 from lxml import html
 from lxml import etree
 import requests
-import re
 import os
 from sys import platform
 
+#Mac OS Notification method
 def notify(title):
     os.system("""
               osascript -e 'display notification "{}" with title "New Job"'
               """.format(title))
-
-#remove html tags
-def cleanhtml(raw_html):
-  cleanr = re.compile('<.*?>')
-  cleantext = re.sub(cleanr, ' ', raw_html)
-  return cleantext
 
 page = requests.get('https://stackoverflow.com/jobs/feed?location=bridgewater&range=50&distanceUnits=Miles')
 
@@ -42,7 +36,6 @@ if len(titles) <= userDefinedRange:
 
 for x in range(userDefinedRange):
 	titleStr = str(titles[x+2])
-	titleStr =  cleanhtml(titleStr)
 
 	if platform == "darwin":
 		notify(titleStr)
