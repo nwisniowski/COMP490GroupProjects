@@ -46,7 +46,7 @@ links = etree.xpath('//item/link/text()')
 userDefinedRange = input("How many jobs would you like to list? ")
 
 while not userDefinedRange.isdigit():
-	print ("FALSE")
+	print ("Only integers are accepted!")
 	userDefinedRange = input("Please input an integer: ")
 
 userDefinedRange = int(userDefinedRange)
