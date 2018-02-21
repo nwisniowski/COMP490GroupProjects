@@ -6,11 +6,13 @@ import requests
 import re
 from textwrap import TextWrapper
 import os
+from sys import platform
 
 def notify(title):
     os.system("""
               osascript -e 'display notification "{}" with title "New Job"'
               """.format(title))
+
 #remove html tags
 def cleanhtml(raw_html):
   cleanr = re.compile('<.*?>')
@@ -38,20 +40,31 @@ etree = etree.fromstring(page.content)
 tree = html.fromstring(page.content)
 
 titles = tree.xpath('//title/text()')
-
 descriptions = tree.xpath('//description/text()')
-
 links = etree.xpath('//item/link/text()')
 
-userDefinedRange = int(input("How many jobs would you like to list? "))
+userDefinedRange = input("How many jobs would you like to list? ")
+
+while not userDefinedRange.isdigit():
+	print ("FALSE")
+	userDefinedRange = input("Please input an integer: ")
+
+userDefinedRange = int(userDefinedRange)
 
 for x in range(userDefinedRange):
-    titleStr = str(titles[x+2])
-    titleStr =  cleanhtml(titleStr)
-    notify(titleStr)
-    print("Title: " + titleStr)
-    print ("Link: " + links[x])
-    print ("\n")
+	titleStr = str(titles[x+2])
+	titleStr =  cleanhtml(titleStr)
+
+	if platform == "darwin":
+		notify(titleStr)
+		print(titleStr)
+		print (links[x])
+		print ("\n")
+
+	else:
+		print(titleStr)
+		print (links[x])
+		print ("\n")
 
 
 
