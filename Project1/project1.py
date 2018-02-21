@@ -51,6 +51,12 @@ while not userDefinedRange.isdigit():
 
 userDefinedRange = int(userDefinedRange)
 
+print ("\nFound " + str(len(titles) - 2) + " jobs on Stack Overflow. \n")
+
+if len(titles) <= userDefinedRange:
+	userDefinedRange = len(titles) - 2
+
+
 for x in range(userDefinedRange):
 	titleStr = str(titles[x+2])
 	titleStr =  cleanhtml(titleStr)
