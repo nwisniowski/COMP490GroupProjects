@@ -5,8 +5,12 @@ from lxml import etree
 import requests
 import re
 from textwrap import TextWrapper
+import os
 
-
+def notify(title):
+    os.system("""
+              osascript -e 'display notification "{}" with title "New Job"'
+              """.format(title))
 #remove html tags
 def cleanhtml(raw_html):
   cleanr = re.compile('<.*?>')
@@ -39,12 +43,16 @@ descriptions = tree.xpath('//description/text()')
 
 links = etree.xpath('//item/link/text()')
 
-for x in range(20):
+userDefinedRange = int(input("How many jobs would you like to list? "))
+
+for x in range(userDefinedRange):
     titleStr = str(titles[x+2])
     titleStr =  cleanhtml(titleStr)
+    notify(titleStr)
     print("Title: " + titleStr)
     print ("Link: " + links[x])
     print ("\n")
+
 
 
 #    descStr = str(descriptions[x+1])
